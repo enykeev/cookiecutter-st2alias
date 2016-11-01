@@ -9,9 +9,3 @@ formats:
 # result:
 #     format: |
 #         Ran command *{{execution.parameters.cmd}}* on *{{ execution.result | length }}* hosts.
-#         Details are as follows:
-#         {% for host in execution.result -%}
-#             Host: *{{host}}*
-#             ---> stdout: {{execution.result[host].stdout}}
-#             ---> stderr: {{execution.result[host].stderr}}
-#         {%+ endfor %}
