@@ -1,0 +1,5 @@
+{
+  "Alias Name": "myalias",
+  "Action": "core.local",
+  "Description": "A short description of the alias"
+}
