@@ -3,9 +3,9 @@ name: {{ cookiecutter['Alias Name'].lower().replace(' ', '-') }}
 action_ref: {{ cookiecutter['Action'] }}
 description: {{ cookiecutter['Description'] }}
 formats:
-    - "run {{cmd}} on {{hosts}}"
+    - {% raw %}"run {{cmd}} on {{hosts}}"{% endraw %}
 # ack:
-#     format: "Hold tight while I run command: *{{execution.parameters.cmd}}* on hosts *{{execution.parameters.hosts}}*"
+#     format: {% raw %}"Hold tight while I run command: *{{execution.parameters.cmd}}* on hosts *{{execution.parameters.hosts}}*"{% endraw %}
 # result:
 #     format: |
-#         Ran command *{{execution.parameters.cmd}}* on *{{ execution.result | length }}* hosts.
+#         {% raw %}Ran command *{{execution.parameters.cmd}}* on *{{ execution.result | length }}* hosts.{% endraw %}
